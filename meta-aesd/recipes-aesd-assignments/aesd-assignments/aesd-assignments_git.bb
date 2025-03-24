@@ -55,6 +55,9 @@ do_install () {
 	install -d ${D}${sysconfdir}/init.d
 	install -m 0755 ${S}/aesdsocket-start-stop ${D}${sysconfdir}/init.d/aesdsocket-start-stop
 
+	#install -d ${D}/${sysconfdir}/rc.S
+	#install -m 0644 ${S}/aesdsocket-start-stop ${D}${sysconfdir}/rc.S/99.aesdsocket-start-stop.sh
+
 	#install -d ${D}/${systemd_unitdir}/system
 	#install -m 0644 ${S}/aesdsocket.service ${D}/${systemd_unitdir}/system
 }
